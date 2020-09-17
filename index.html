@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pesos</title>
+<style type="text/css">
+	body
+	{
+		
+		font-family: Arial;
+		font-size: 28px;
+	}
+	h1
+	{
+		font-style: italic;
+	}
+	strong
+	{
+		background-color: green;
+	}
+</style>
+</head>
+<body>
+	<h1 style="text-align: center;"> Tu peso en diferentes planetas</h1>
+<div align="center"><script type="text/javascript">
+	var nombre = prompt("¿Como te llamas?");
+	var usuario = prompt("¿Cual es tu peso?");
+	var planeta = parseInt(prompt("Elige tu planeta \n 1 es marte \n 2 es jupiter. "));
+	var peso = parseInt(usuario);
+	var g_tierra = 9.8;
+	var g_marte = 3.7;
+	var g_jupiter = 24.8;
+	var peso_final;
+	if (planeta==1)
+	{
+		peso_final = parseInt(peso*g_marte/g_tierra);
+		document.write("Tu peso en marte es <strong> " + peso_final + " kg</strong>." );
+	}
+	else if(planeta==2)
+	{
+		peso_final = parseInt(peso*g_jupiter/g_tierra);
+		document.write("Tu peso en Jupiter <strong>" + peso_final + " kg</strong>.");
+	}
+	else 
+	{
+		peso_final = 666;
+		document.write("Come monda " + nombre + ".");
+	}
+
+
+</script></div>
+</body>
+</html>
